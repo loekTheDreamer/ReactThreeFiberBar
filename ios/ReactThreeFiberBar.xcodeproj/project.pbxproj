@@ -14,6 +14,8 @@
 		6172F2D35A4C3AA820D92908 /* libPods-ReactThreeFiberBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-ReactThreeFiberBar.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-ReactThreeFiberBar-ReactThreeFiberBarTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-ReactThreeFiberBar-ReactThreeFiberBarTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C4DAD86D38E0E611B079CFE7 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7236B3CAA1C49D1AE0F4563 /* ExpoModulesProvider.swift */; };
+		CFF638774416437C87066AB3 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2EC37F75543A8538EC8A5 /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		ABFE59519B596E51CEFDCCC0 /* libPods-ReactThreeFiberBar-ReactThreeFiberBarTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactThreeFiberBar-ReactThreeFiberBarTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A881CF5CF3F2B244570E2A /* Pods-ReactThreeFiberBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactThreeFiberBar.debug.xcconfig"; path = "Target Support Files/Pods-ReactThreeFiberBar/Pods-ReactThreeFiberBar.debug.xcconfig"; sourceTree = "<group>"; };
 		D00AAFFCFCFDA5787532823F /* Pods-ReactThreeFiberBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactThreeFiberBar.release.xcconfig"; path = "Target Support Files/Pods-ReactThreeFiberBar/Pods-ReactThreeFiberBar.release.xcconfig"; sourceTree = "<group>"; };
+		D7236B3CAA1C49D1AE0F4563 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ReactThreeFiberBar/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		E3B2EC37F75543A8538EC8A5 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ReactThreeFiberBar-ReactThreeFiberBarTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -106,6 +110,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2E63871E0935807EA009547D /* ReactThreeFiberBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2EC37F75543A8538EC8A5 /* ExpoModulesProvider.swift */,
+			);
+			name = ReactThreeFiberBarTests;
+			sourceTree = "<group>";
+		};
+		40B86DED21D9BCFDB26116BC /* ReactThreeFiberBar */ = {
+			isa = PBXGroup;
+			children = (
+				D7236B3CAA1C49D1AE0F4563 /* ExpoModulesProvider.swift */,
+			);
+			name = ReactThreeFiberBar;
+			sourceTree = "<group>";
+		};
+		590B01200D096A69F017A7E1 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				40B86DED21D9BCFDB26116BC /* ReactThreeFiberBar */,
+				2E63871E0935807EA009547D /* ReactThreeFiberBarTests */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +151,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
+				590B01200D096A69F017A7E1 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -404,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* ReactThreeFiberBarTests.m in Sources */,
+				CFF638774416437C87066AB3 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +444,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				C4DAD86D38E0E611B079CFE7 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +469,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = ReactThreeFiberBarTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +493,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ReactThreeFiberBarTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,7 +609,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -635,7 +667,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
